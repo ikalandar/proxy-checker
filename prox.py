@@ -10,7 +10,9 @@ from sys import argv
 import urllib3
 from os import system as terminal
 import requests
-from colorama import Fore,Style
+from colorama import Fore, Style, init
+
+init() # for support windows os
 
 URL = "http://google.com"
 CMD_CLEAR_TERM = "clear"
